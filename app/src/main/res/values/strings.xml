@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroidKotlinPipopipette</string>
     <string name="nom_button_jouer">jouer</string>
+    <string name="nom_button">commencer</string>
 </resources>
