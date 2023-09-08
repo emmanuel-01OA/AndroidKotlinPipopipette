@@ -3,7 +3,9 @@ package com.example.androidkotlinpipopipette
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 
 
 class Menuconfig : AppCompatActivity() {
@@ -11,8 +13,19 @@ class Menuconfig : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menuconfig)
 
-       // val linearLayout: LinearLayout = findViewById(R.id.menupipo)
+      // val RelativeLayout: RelativeLayout = findViewById(R.id.menupipo)
 
+
+        val retourkbtn: Button =  findViewById(R.id.button_ret);
+
+        retourkbtn.setOnClickListener {
+
+            val intent: Intent = Intent(this, MainActivity::class.java);
+            this.startActivity(intent)
+            finish()
+
+
+        }
 
     }
 }

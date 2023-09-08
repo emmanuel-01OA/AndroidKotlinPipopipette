@@ -4,7 +4,6 @@ package com.example.androidkotlinpipopipette
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 
 
@@ -16,9 +15,9 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.btnJouer)
         button.setOnClickListener {
 
-            val intent: Intent = Intent(this, Menuconfig::class.java);
+            val intent: Intent = Intent(this, InterfaceJeuPipopipetteActivity::class.java);
             this.startActivity(intent)
-            finish()
+             finish()
 
 
         }

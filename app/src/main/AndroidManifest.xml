@@ -10,12 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidKotlinPipopipette">
         <activity
+            android:name=".InterfaceJeuPipopipetteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_interface_jeu_pipopipette"
+            android:theme="@style/Theme.AndroidKotlinPipopipette.Fullscreen" />
+        <activity
             android:name=".Menuconfig"
             android:exported="false" />
 
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/logo_config" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity
             android:name=".MainActivity"
