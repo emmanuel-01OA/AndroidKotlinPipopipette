@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.RelativeLayout
 
 
 class Menuconfig : AppCompatActivity() {

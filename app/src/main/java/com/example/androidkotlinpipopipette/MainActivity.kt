@@ -15,13 +15,14 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.btnJouer)
         button.setOnClickListener {
 
-            val intent: Intent = Intent(this, InterfaceJeuPipopipetteActivity::class.java);
+                val intent: Intent = Intent(this, configNomJActivity::class.java);
+
+
             this.startActivity(intent)
              finish()
 
 
         }
-
     }
 
 

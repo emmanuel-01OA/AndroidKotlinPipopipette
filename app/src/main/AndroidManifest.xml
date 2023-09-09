@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidKotlinPipopipette">
         <activity
+            android:name=".configNomJActivity"
+            android:exported="false" />
+        <activity
             android:name=".InterfaceJeuPipopipetteActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
