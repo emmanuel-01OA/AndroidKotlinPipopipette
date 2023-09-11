@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidKotlinPipopipette">
         <activity
+            android:name=".PageHelpPipopipette"
+            android:exported="false" />
+        <activity
+            android:name=".MenuPipopipette"
+            android:exported="false" />
+        <activity
             android:name=".Menuconfig"
             android:exported="false" />
 

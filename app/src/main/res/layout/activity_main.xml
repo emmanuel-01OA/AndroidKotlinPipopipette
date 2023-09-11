@@ -25,9 +25,7 @@
         android:id ="@+id/btnJouer"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
-
-        android:layout_height="60dp"
-
+        android:layout_height="80dp"
         android:text="@string/nom_button_jouer"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         tools:layout_editor_absoluteX="57dp">
