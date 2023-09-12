@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="?attr/fullscreenBackgroundColor"
-    android:theme="@style/ThemeOverlay.AndroidKotlinPipopipette.FullscreenContainer"
     tools:context=".InterfaceJeuPipopipetteActivity">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
+<!--
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="159dp"
+        android:gravity="center"
         android:orientation="horizontal"
         app:measureWithLargestChild="false">
 
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/layoutNomJ1"
+
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/ic_round_button_draw"
+            android:gravity="fill"
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -35,44 +34,89 @@
             </androidx.appcompat.widget.AppCompatImageView>
 
             <TextView
+
                 android:id="@+id/NomJ1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="20dp"
                 android:text="@string/strjoueur1"
-                android:textColor="?attr/fullscreenTextColor"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:lastBaselineToBottomHeight="25dp" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
+
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/layoutNomJ2"
+
             android:layout_width="140dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="130dp"
             android:background="@drawable/ic_round_button_draw"
+            android:gravity="fill"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:id="@+id/ScoreJ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/strjoueur2"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:lastBaselineToBottomHeight="25dp" />
+
+            <TextView
+
+                android:id="@+id/ScoreJ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/strjoueur2"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:lastBaselineToBottomHeight="25dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_round_button_draw"
+            android:gravity="fill"
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="140dp"
                 android:layout_height="47dp"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/user_1">
+                android:src="@drawable/user_2">
 
             </androidx.appcompat.widget.AppCompatImageView>
 
             <TextView
+
                 android:id="@+id/NomJ2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="20dp"
                 android:text="@string/strjoueur2"
-                android:textColor="?attr/fullscreenTextColor"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:lastBaselineToBottomHeight="25dp" />
@@ -80,52 +124,12 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-
-
     </androidx.appcompat.widget.LinearLayoutCompat>
-            <!--
-    <TextView
-        android:id="@+id/fullscreen_content"
+-->
+
+    <com.example.androidkotlinpipopipette.jeuPipopipetteView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:keepScreenOn="true"
-        android:text="@string/app_name"
-        android:textColor="?attr/fullscreenTextColor"
-        android:textSize="40sp"
-        android:textStyle="bold" />-->
+        android:layout_height="match_parent">
+    </com.example.androidkotlinpipopipette.jeuPipopipetteView>
 
-
-            <!-- This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows. -->
-            <!-- <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
-
-        <LinearLayout
-            android:id="@+id/fullscreen_content_controls"
-            style="@style/Widget.Theme.AndroidKotlinPipopipette.ButtonBar.Fullscreen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
--->
-            <!--   <Button
-                android:id="@+id/dummy_button"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/dummy_button" />
--->
-
-
-            <!--     </LinearLayout>
-    </FrameLayout>
--->
-
-
-
-</FrameLayout>
+</RelativeLayout>

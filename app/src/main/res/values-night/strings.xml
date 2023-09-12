@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="titre_appropos">A propos du Jeu</string>
     <string name="info_jeu">Comment jouer au Pipopipette( Dots and Boxes )</string>
 
-    <string name="nom_button">commencer</string>
     <string name="info_jeudetails">" est un jeu de stratégie sophistiqué pour 2 joueurs, aux plusieurs niveaux de difficulté"</string>
-    <string name="retour">retour</string>
     <string name="title_activity_interface_jeu_pipopipette">InterfaceJeuPipopipetteActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="titreN">"Entrez les noms des joueurs "</string>
 </resources>

@@ -10,20 +10,18 @@ class Menuconfig : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menuconfig)
-
-      // val RelativeLayout: RelativeLayout = findViewById(R.id.menupipo)
-
-
-        val retourkbtn: Button =  findViewById(R.id.button_ret);
+        val retourkbtn: Button =  findViewById(R.id.button_ret)
 
         retourkbtn.setOnClickListener {
 
-            val intent: Intent = Intent(this, MainActivity::class.java);
+            // bouton retour qui mene au menu principale.
+            val intent: Intent = Intent(this, MenuPipopipette::class.java)
             this.startActivity(intent)
-            finish()
+
 
 
         }
+
 
     }
 }

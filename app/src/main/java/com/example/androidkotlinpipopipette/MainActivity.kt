@@ -4,7 +4,9 @@ package com.example.androidkotlinpipopipette
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import androidx.cardview.widget.CardView
 
 
 class MainActivity : AppCompatActivity() {
@@ -12,18 +14,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button: Button = findViewById(R.id.btnJouer)
-        button.setOnClickListener {
+        val CardVbutton: Button = findViewById(R.id.jouer)
+        CardVbutton.setOnClickListener {
 
-                val intent: Intent = Intent(this, configNomJActivity::class.java);
-
-
+            val intent: Intent = Intent(this, MenuPipopipette::class.java);
             this.startActivity(intent)
-             finish()
-
-
-        }
     }
+/*
+    fun menu(view: View) {
 
+
+
+        }*/
+    }
 
 }

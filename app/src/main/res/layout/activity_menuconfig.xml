@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/menupipo"
     tools:context=".Menuconfig">
 
 
@@ -24,7 +23,6 @@
         app:flow_horizontalAlign="center">
 
     <ImageView
-        android:id="@+id/logo_info"
         android:layout_width="422dp"
         android:layout_height="134dp"
         android:layout_marginTop="40dp"
@@ -34,6 +32,9 @@
 
 
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -42,7 +43,6 @@
 
 
             <TextView
-                android:id="@+id/titre_faq"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -53,8 +53,7 @@
                 app:fontFamily="@font/chela_one" />
 
             <TextView
-                android:id="@+id/info_faq"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:layout_marginHorizontal="30dp"
                 android:text="@string/info_jeudetails"
@@ -64,7 +63,79 @@
                 app:fontFamily="@font/chilanka" />
 
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="30dp"
+                android:text="@string/info_jeudetails2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:fontFamily="@font/chilanka" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="30dp"
+                android:text="@string/info_jeudetails3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:fontFamily="@font/chilanka" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="30dp"
+                android:text="@string/info_jeudetails4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:fontFamily="@font/chilanka" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="30dp"
+                android:text="@string/info_jeudetails5"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:fontFamily="@font/chilanka" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="30dp"
+                android:text="@string/info_jeudetails6"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:fontFamily="@font/chilanka" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="30dp"
+                android:text="@string/info_jeudetails7"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:fontFamily="@font/chilanka" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="30dp"
+                android:text="@string/info_jeudetails8"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:fontFamily="@font/chilanka" />
+
+
         </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout >

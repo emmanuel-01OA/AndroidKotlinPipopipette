@@ -1,17 +1,25 @@
 <resources>
     <string name="app_name">AndroidKotlinPipopipette</string>
     <string name="nom_button_jouer">jouer</string>
-    <string name="nom_button">commencer</string>
-    <string name="titre_appropos">A propos du Jeu</string>
     <string name="info_jeu">Comment jouer au Pipopipette( Dots and Boxes )?</string>
-    <string name="info_jeudetails">" est un jeu de stratégie sophistiqué pour 2 joueurs, aux plusieurs niveaux de difficulté"</string>
-    <string name="retour">retour</string>
+
+<!--    bloc d instrction de jeu -->
+    <string name="info_jeudetails"> Pipopipette est un jeu de stratégie sophistiqué pour deux (2) joueurs</string>
+    <string name="info_jeudetails2">  le jeu pipopette est de dimension 6x6"</string>
+    <string name="info_jeudetails3"> Le jeu commence par une grille vide de points. En général, deux joueurs se relaient pour ajouter une ligne horizontale ou verticale entre deux points adjacents non reliés"</string>
+    <string name="info_jeudetails4"> chaque joueur relie deux points côte à côte ou un coté d\' une bôite. </string>
+    <string name="info_jeudetails5"> il est interdit d \'insérer une ligne oblique pour relier deux points </string>
+    <string name="info_jeudetails6"> Un joueur qui complète le quatrième côté d\'une boîte 1×1 gagne un point et rejoue encore 1 fois. </string>
+    <string name="info_jeudetails7"> Un point est enregistré dans le jeu en plaçant une marque dans la boîte qui identifie le joueur , comme son indice.</string>
+    <string name="info_jeudetails8"> le jouer qui aura le plus de point lorsque la partie terminée sera le vainqueur de la partie </string>
+
+
+
     <string name="title_activity_interface_jeu_pipopipette">InterfaceJeuPipopipetteActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="infoJour" >identifiant joueur 1</string>
+    <string name="infoJour">identifiant joueur 1</string>
     <string name="infoJour2">identifiant joueur 2</string>
     <string name="titreN">"Entrez les noms des joueurs "</string>
     <string name="strjoueur1">joueur 1</string>
     <string name="strjoueur2">joueur 2</string>
+    <string name="commencer">commencer</string>
 </resources>
