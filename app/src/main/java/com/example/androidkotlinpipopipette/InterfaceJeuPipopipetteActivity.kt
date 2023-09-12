@@ -2,6 +2,7 @@ package com.example.androidkotlinpipopipette
 
 
 
+import android.content.SharedPreferences
 import android.icu.text.SimpleDateFormat
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -35,7 +36,23 @@ class InterfaceJeuPipopipetteActivity : AppCompatActivity() {
         recepNomJ2.setText(obtNomJ2)
 */
         }
-
+/*
+    private fun setEditText(preferences: SharedPreferences) {
+        val p1text: EditText = findViewById(R.id.)
+        p1text.setText(
+            preferences.getString(
+                resources.getString(R.string.PlayerOneNickname),
+                "Player One"
+            )
+        )
+        val p2text: EditText = findViewById(R.id.PlayerTwoTextEdit)
+        p2text.setText(
+            preferences.getString(
+                resources.getString(R.string.PlayerTwoNickname),
+                "Player Two"
+            )
+        )
+    }*/
 
 
 

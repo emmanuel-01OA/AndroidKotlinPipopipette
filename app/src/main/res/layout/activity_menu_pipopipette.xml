@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MenuPipopipette">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="208dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_pipopipette"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="25dp" />
+
+  </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical" >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="175dp"
+            android:layout_marginBottom="4dp"
+            android:columnCount="3"
+            android:columnWidth="20dp"
+            android:rowCount="3"
+            tools:layout_editor_absoluteX="-6dp"
+            tools:layout_editor_absoluteY="107dp">
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_row="0"
+              android:layout_rowWeight="5"
+              android:layout_column="0"
+              android:layout_columnWeight="1"
+              android:layout_gravity="fill"
+              android:layout_margin="35dp"
+              app:cardBackgroundColor="@color/purple_500"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              app:cardCornerRadius="150dp"
+              app:cardElevation="10dp"
+              android:id="@+id/btnjconfigNom">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:columnWidth="20dp"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/play" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/nom_button_jouer"
+                  android:textAlignment="center"
+                  android:textColor="@color/white"
+                  android:textSize="20sp"
+                  android:textStyle="bold" />
+            </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="307dp"
+              android:layout_height="92dp"
+              android:layout_row="1"
+              android:layout_rowWeight="5"
+              android:layout_column="0"
+              android:layout_columnWeight="1"
+              android:layout_gravity="fill"
+              android:layout_margin="35dp"
+              app:cardBackgroundColor="@color/purple_500"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:background="@drawable/ripple_effet"
+              app:cardCornerRadius="150dp"
+              app:cardElevation="10dp"
+              android:id="@+id/btninstruction" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:columnWidth="20dp"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/info" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="instructions"
+                  android:textAlignment="center"
+                  android:textColor="@color/white"
+                  android:textSize="20sp"
+                  android:textStyle="bold" />
+            </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_row="2"
+              android:layout_rowWeight="5"
+              android:layout_column="0"
+              android:layout_columnWeight="1"
+              android:layout_gravity="fill"
+              android:layout_margin="35dp"
+              app:cardBackgroundColor="@color/purple_500"
+              app:cardCornerRadius="150dp"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:background="@drawable/ripple_effet"
+              app:cardElevation="5dp"
+              android:id="@+id/btnquitter"
+              android:onClick="finishAffinity" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/exit" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="quitter"
+                  android:textAlignment="center"
+                  android:textColor="@color/white"
+                  android:textSize="20sp"
+                  android:textStyle="bold" />
+            </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+      </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
