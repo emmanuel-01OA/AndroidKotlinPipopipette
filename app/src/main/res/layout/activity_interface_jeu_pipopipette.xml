@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InterfaceJeuPipopipetteActivity">
+
+<!--
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:measureWithLargestChild="false">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_round_button_draw"
+            android:gravity="fill"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="140dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/user_1">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <TextView
+
+                android:id="@+id/NomJ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/strjoueur1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:lastBaselineToBottomHeight="25dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_round_button_draw"
+            android:gravity="fill"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:id="@+id/ScoreJ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/strjoueur2"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:lastBaselineToBottomHeight="25dp" />
+
+            <TextView
+
+                android:id="@+id/ScoreJ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/strjoueur2"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:lastBaselineToBottomHeight="25dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_round_button_draw"
+            android:gravity="fill"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="140dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/user_2">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <TextView
+
+                android:id="@+id/NomJ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/strjoueur2"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:lastBaselineToBottomHeight="25dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.example.androidkotlinpipopipette.jeuPipopipetteView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.androidkotlinpipopipette.jeuPipopipetteView>
+
+    </LinearLayout>
+
+</RelativeLayout>

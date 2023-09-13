@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import androidx.cardview.widget.CardView
 
 
 class MainActivity : AppCompatActivity() {
@@ -13,17 +14,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button: Button = findViewById(R.id.btnJouer)
-        button.setOnClickListener {
+        val CardVbutton = findViewById<CardView>(R.id.comj)
+        CardVbutton.setOnClickListener {
 
-            val intent: Intent = Intent(this, Menuconfig::class.java);
-            this.startActivity(intent)
+            val intentm = Intent(this, MenuPipopipette::class.java)
+            this.startActivity(intentm)
             finish()
-
-
-        }
-
     }
+/*
+    fun menu(view: View) {
 
+
+
+        }*/
+    }
 
 }
