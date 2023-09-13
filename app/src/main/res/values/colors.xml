@@ -14,9 +14,14 @@
     <color name="black_overlay">#66000000</color>
     <color name="colorN">#3F51B5</color>
 
-    <color name="couleur_selectionPoint">#2C8506</color>
+    <color name="couleur_selectionPoint">#1387ED</color>
 
-    <color name="couleur_Point">#1832C6</color>
+    <color name="couleur_Point">#6200EE</color>
+
+    <!--couleur des joueurs -->
+    <color name="couleurj1">#117F1E</color>
+
+    <color name="couleurj2">#EF1D1D</color>
 
 
 

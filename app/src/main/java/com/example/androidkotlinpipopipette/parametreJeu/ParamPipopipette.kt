@@ -35,7 +35,7 @@ class ParamPipopipette(val mapSize: Int, val context: Context) {
         )!!
         val joueur1style = editor.getInt(
             context.resources.getString(R.string.strjoueur1),
-            Color.rgb(0,145,150)
+            context.resources.getColor(R.color.couleurj1)
         )
         val joueur2= editor.getString(
             context.resources.getString(R.string.strjoueur2),
@@ -43,7 +43,7 @@ class ParamPipopipette(val mapSize: Int, val context: Context) {
         )!!
         val joueur2style = editor.getInt(
             context.resources.getString(R.string.strjoueur2),
-            context.resources.getColor(R.color.purple_700)
+            context.resources.getColor(R.color.couleurj2)
         )
 
         joueur = arrayOf(Player(joueur1, joueur1style), Player(joueur2, joueur2style))

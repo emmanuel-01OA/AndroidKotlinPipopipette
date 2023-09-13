@@ -14,11 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val CardVbutton: Button = findViewById(R.id.jouer)
+        val CardVbutton = findViewById<CardView>(R.id.comj)
         CardVbutton.setOnClickListener {
 
-            val intent: Intent = Intent(this, MenuPipopipette::class.java);
-            this.startActivity(intent)
+            val intentm = Intent(this, MenuPipopipette::class.java)
+            this.startActivity(intentm)
+            finish()
     }
 /*
     fun menu(view: View) {

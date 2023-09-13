@@ -47,8 +47,6 @@ class jeuPipopipetteView(context: Context) : SurfaceView(context), SurfaceHolder
         super.draw(canvas)
         if (canvas != null) {
             canvas.drawColor(Color.MAGENTA)
-            //drawBoard(canvas)
-            //rectangle.drawMovingRectangle(canvas)
             drawTurnIndicator(canvas)
             drawLines(canvas)
             drawSquares(canvas)
@@ -237,7 +235,7 @@ class jeuPipopipetteView(context: Context) : SurfaceView(context), SurfaceHolder
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         if( ! gameController.actionPerformed(event)) {
-            Toast.makeText(this.context, "Illegal move", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this.context, "impossible de placer la ligne dans cette direction", Toast.LENGTH_SHORT).show()
             return true
         }
         return false

@@ -11,6 +11,7 @@ class MenuPipopipette : AppCompatActivity() {
     private lateinit var ActionInstruction: CardView
     private lateinit var ActionJouerPipopipette : CardView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_pipopipette)
@@ -27,8 +28,13 @@ class MenuPipopipette : AppCompatActivity() {
         // aller dans la page de configuration de nom
 
        ActionJouerPipopipette = findViewById(R.id.btnjconfigNom)
-        val inten: Intent = Intent(this, configNomJActivity::class.java)
-        startActivity(inten)
+        ActionJouerPipopipette.setOnClickListener {
+
+            val intenconfigN = Intent(this, ConfigNomJActivity::class.java)
+            this.startActivity(intenconfigN)
+
+
+        }
 
     }
 

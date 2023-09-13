@@ -12,31 +12,31 @@ import androidx.annotation.RequiresApi
 import kotlinx.coroutines.NonCancellable.start
 
 
-class configNomJActivity : AppCompatActivity() {
-    var activityState: Int = R.string.app_name
+class ConfigNomJActivity : AppCompatActivity() {
+   var activityState: Int = R.string.app_name
     var jeuPipopipetteView: jeuPipopipetteView? = null
-    var yesterdayToast: Toast? = null
+   // var yesterdayToast: Toast? = null
+   // private lateinit var retourbtn : Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
-
         // affiche l'interface xml select_nom_joueur.xml
         setContentView(R.layout.selection_nom_joueur)
 
-        val selectionNom1 = findViewById<EditText>(R.id.selectj1)
+      /*  val selectionNom1 = findViewById<EditText>(R.id.selectj1)
 
         val selectionNom2 = findViewById<EditText>(R.id.selectj2)
+*/
 
+          val retourbtn = findViewById<Button>(R.id.buttonret);
 
-        val retourkbtn: Button = findViewById(R.id.button_ret);
+        retourbtn.setOnClickListener {
 
-        retourkbtn.setOnClickListener {
-
-            val intent: Intent = Intent(this, MenuPipopipette::class.java);
-            this.startActivity(intent)
+            val intentretbtn = Intent(this, MenuPipopipette::class.java);
+            this.startActivity(intentretbtn)
+            finish()
 
 
 
@@ -80,9 +80,11 @@ class configNomJActivity : AppCompatActivity() {
         val intent = Intent(this, T::class.java)
         startActivity(intent)
     }*/
-        @RequiresApi(Build.VERSION_CODES.O)
+
         fun demarrer(view: View) {
-            jeuPipopipetteView = jeuPipopipetteView(this)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                jeuPipopipetteView = jeuPipopipetteView(this)
+            }
             setContentView(jeuPipopipetteView)
             activityState = R.string.app_name
         }

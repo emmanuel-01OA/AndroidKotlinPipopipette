@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">AndroidKotlinPipopipette</string>
-    <string name="nom_button_jouer">jouer</string>
+    <string name="nombtnjouer">jouer</string>
     <string name="info_jeu">Comment jouer au Pipopipette( Dots and Boxes )?</string>
 
-<!--    bloc d instrction de jeu -->
+    <!--    bloc d instrction de jeu -->
     <string name="info_jeudetails"> Pipopipette est un jeu de stratégie sophistiqué pour deux (2) joueurs</string>
     <string name="info_jeudetails2">  le jeu pipopette est de dimension 6x6"</string>
     <string name="info_jeudetails3"> Le jeu commence par une grille vide de points. En général, deux joueurs se relaient pour ajouter une ligne horizontale ou verticale entre deux points adjacents non reliés"</string>
@@ -12,7 +12,6 @@
     <string name="info_jeudetails6"> Un joueur qui complète le quatrième côté d\'une boîte 1×1 gagne un point et rejoue encore 1 fois. </string>
     <string name="info_jeudetails7"> Un point est enregistré dans le jeu en plaçant une marque dans la boîte qui identifie le joueur , comme son indice.</string>
     <string name="info_jeudetails8"> le jouer qui aura le plus de point lorsque la partie terminée sera le vainqueur de la partie </string>
-
 
 
     <string name="title_activity_interface_jeu_pipopipette">InterfaceJeuPipopipetteActivity</string>

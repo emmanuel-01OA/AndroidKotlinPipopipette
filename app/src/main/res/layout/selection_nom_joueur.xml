@@ -7,17 +7,23 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:gravity="center"
-    tools:context=".configNomJActivity">
+    tools:context=".ConfigNomJActivity">
 
-    <Button
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        android:id="@+id/button_ret"
-        android:layout_width="58dp"
-        android:layout_height="52dp"
-        android:background="@drawable/ic_baseline_arrow_back_24"
-        android:textColor="@color/purple_700"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+
+            android:id="@+id/buttonret"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/ic_round_button_draw"
+            android:foreground="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
 
     <ImageView
         android:layout_width="150dp"
@@ -103,36 +109,65 @@
         <!-- champs de reccuperation joueur 2 -->
 
         <EditText
-            android:inputType="text"
-            android:maxLines="1"
             android:id="@+id/selectj1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
             android:hint="@string/infoJour2"
-            android:textColorHint="@color/colorN"
-            android:layout_marginEnd="20dp"
+            android:inputType="text"
+            android:maxLines="1"
             android:textColor="@color/colorN"
-            >
+            android:textColorHint="@color/colorN">
 
         </EditText>
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_demarrer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="50dp"
-        style="@style/Widget.AppCompat.Button"
-        android:text="demarrer le jeu"
-        android:onClick="demarrer"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="57dp"
-        >
+    <!--  bouton commencer    -->
 
-    </Button>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/comj"
+            android:layout_width="302dp"
+            android:layout_height="78dp"
+            android:layout_row="1"
+            android:layout_rowWeight="5"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="35dp"
+            android:background="@drawable/ripple_effet"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/purple_500"
+            app:cardCornerRadius="150dp"
+            app:cardElevation="10dp"
+            android:onClick="demarrer" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:columnWidth="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombtnjouer"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

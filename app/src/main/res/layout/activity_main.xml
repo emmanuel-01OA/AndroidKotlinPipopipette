@@ -27,24 +27,24 @@
                 android:layout_margin="15dp"
                 android:src="@drawable/logo_hd" />
 
-            <!--bouton commencer-->
-<!--
+
+
             <androidx.cardview.widget.CardView
                 android:layout_width="307dp"
                 android:layout_height="92dp"
                 android:layout_row="1"
-                android:layout_rowWeight="5"
-                android:layout_column="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="35dp"
                 app:cardBackgroundColor="@color/purple_500"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
-                android:background="@drawable/ripple_effet"
                 app:cardCornerRadius="150dp"
                 app:cardElevation="10dp"
-                android:id="@+id/jouer" >
+                android:id="@+id/comj"
+                 >
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -65,20 +65,19 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-         --><!---->
-            <Button
-                android:id="@+id/jouer"
+
+            <!---->
+       <!--     <Button
+                android:id="@+id/comj"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
-
                 android:layout_height="60dp"
-                android:onClick="menu"
                 android:layout_margin="15dp"
                 android:text="@string/commencer"
                 tools:layout_editor_absoluteX="57dp">
 
             </Button>
-
+-->
         </LinearLayout>
 
 

@@ -12,20 +12,21 @@
         android:theme="@style/Theme.AndroidKotlinPipopipette">
         <activity
             android:name=".SpashAnimationPipopipette"
-            android:exported="true"
-           >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
         <activity
-            android:name=".configNomJActivity"
+            android:name=".ConfigNomJActivity"
             android:exported="false" />
         <activity
             android:name=".MenuPipopipette"
             android:exported="false" />
+
         <activity
             android:name=".InterfaceJeuPipopipetteActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -47,9 +48,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>
